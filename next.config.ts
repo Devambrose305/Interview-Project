@@ -1,7 +1,6 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+module.exports = {
+  swcMinify: true, // Enable SWC for minification
+  experimental: {
+    swcLoader: true, // Use the stable SWC loader
+  },
 };
-
-export default nextConfig;
